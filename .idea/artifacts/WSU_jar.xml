@@ -1,0 +1,37 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="WSU:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/WSU_jar</output-path>
+    <root id="archive" name="ver1.jar">
+      <element id="module-output" name="ver1" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/java/dev/jna/jna/3.5.2/jna-3.5.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/Program Files/MATLAB/R2015b/toolbox/javabuilder/jar/javabuilder.jar" path-in-jar="/" />
+      <element id="library" level="project" name="jdk1.8" />
+      <element id="library" level="project" name="ffmpeg-windows-x86_64" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/vlcj/jna-4.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/vlcj/vlcj-2.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/vlcj/vlcj-3.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/vlcj/vlcj-3.10.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/vlcj/httpcore-4.4.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/vlcj/httpmime-4.5.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/vlcj/fluent-hc-4.5.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/vlcj/httpclient-4.5.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/vlcj/slf4j-api-1.7.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/vlcj/commons-codec-1.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/vlcj/jna-platform-4.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/vlcj/vlcj-3.0.1-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/vlcj/vlcj-3.0.1-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/vlcj/commons-logging-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/vlcj/slf4j-simple-1.7.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/vlcj/httpclient-win-4.5.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/vlcj/libbluray-j2se-0.7.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/vlcj/httpclient-cache-4.5.1.jar" path-in-jar="/" />
+      <element id="library" level="project" name="opencv-windows-x86_64" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javacv.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javacpp-1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javacpp.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.7.13/slf4j-log4j12-1.7.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

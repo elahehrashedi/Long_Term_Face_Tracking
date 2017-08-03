@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_ver1" default="compile.module.ver1">
+  <dirname property="module.ver1.basedir" file="${ant.file.module_ver1}"/>
+  
+  <property name="module.jdk.home.ver1" value="${jdk.home.1.8}"/>
+  <property name="module.jdk.bin.ver1" value="${jdk.bin.1.8}"/>
+  <property name="module.jdk.classpath.ver1" value="jdk.classpath.1.8"/>
+  
+  <property name="compiler.args.ver1" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="ver1.output.dir" value="${module.ver1.basedir}/out/production/ver1"/>
+  <property name="ver1.testoutput.dir" value="${module.ver1.basedir}/out/test/ver1"/>
+  
+  <path id="ver1.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="ver1.module.production.classpath">
+    <path refid="${module.jdk.classpath.ver1}"/>
+    <path refid="library.marvin_1.5.2.classpath"/>
+    <path refid="library.vlcj.classpath"/>
+    <path refid="library.vlc.classpath"/>
+    <path refid="library.commons-codec-1.9.classpath"/>
+    <path refid="library.net.java.dev.jna:jna:3.5.2.classpath"/>
+    <path refid="library.org.slf4j:slf4j-log4j12:1.7.13.classpath"/>
+    <path refid="library.vlcj-2.4.1.classpath"/>
+    <path refid="library.jdk1.8.classpath"/>
+    <path refid="library.javabuilder.classpath"/>
+  </path>
+  
+  <path id="ver1.runtime.production.module.classpath">
+    <pathelement location="${ver1.output.dir}"/>
+    <path refid="library.marvin_1.5.2.classpath"/>
+    <path refid="library.vlcj.classpath"/>
+    <path refid="library.vlc.classpath"/>
+    <path refid="library.commons-codec-1.9.classpath"/>
+    <path refid="library.net.java.dev.jna:jna:3.5.2.classpath"/>
+    <path refid="library.org.slf4j:slf4j-log4j12:1.7.13.classpath"/>
+    <path refid="library.vlcj-2.4.1.classpath"/>
+    <path refid="library.jdk1.8.classpath"/>
+    <path refid="library.javabuilder.classpath"/>
+  </path>
+  
+  <path id="ver1.module.classpath">
+    <path refid="${module.jdk.classpath.ver1}"/>
+    <pathelement location="${ver1.output.dir}"/>
+    <path refid="library.marvin_1.5.2.classpath"/>
+    <path refid="library.vlcj.classpath"/>
+    <path refid="library.vlc.classpath"/>
+    <path refid="library.commons-codec-1.9.classpath"/>
+    <path refid="library.net.java.dev.jna:jna:3.5.2.classpath"/>
+    <path refid="library.org.slf4j:slf4j-log4j12:1.7.13.classpath"/>
+    <path refid="library.vlcj-2.4.1.classpath"/>
+    <path refid="library.jdk1.8.classpath"/>
+    <path refid="library.javabuilder.classpath"/>
+  </path>
+  
+  <path id="ver1.runtime.module.classpath">
+    <pathelement location="${ver1.testoutput.dir}"/>
+    <pathelement location="${ver1.output.dir}"/>
+    <path refid="library.marvin_1.5.2.classpath"/>
+    <path refid="library.vlcj.classpath"/>
+    <path refid="library.vlc.classpath"/>
+    <path refid="library.commons-codec-1.9.classpath"/>
+    <path refid="library.net.java.dev.jna:jna:3.5.2.classpath"/>
+    <path refid="library.org.slf4j:slf4j-log4j12:1.7.13.classpath"/>
+    <path refid="library.vlcj-2.4.1.classpath"/>
+    <path refid="library.jdk1.8.classpath"/>
+    <path refid="library.javabuilder.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.ver1">
+    <patternset refid="ignored.files"/>
+    <exclude name="out/**"/>
+    <exclude name="out/test/**"/>
+    <exclude name="out/test/ver1/**"/>
+    <exclude name="out/test/ver1/src/**"/>
+    <exclude name="out/test/ver1/src/FCT/**"/>
+    <exclude name="out/test/ver1/src/icons/**"/>
+    <exclude name="out/test/ver1/src/TrackerLib/**"/>
+    <exclude name="out/test/ver1/data/**"/>
+    <exclude name="out/test/ver1/vlcj/**"/>
+    <exclude name="out/test/ver1/.idea/**"/>
+    <exclude name="out/test/ver1/.idea/copyright/**"/>
+    <exclude name="out/test/ver1/.idea/libraries/**"/>
+    <exclude name="out/test/ver1/forms/**"/>
+    <exclude name="out/test/ver1/icons/**"/>
+    <exclude name="out/test/ver1/Results/**"/>
+    <exclude name="out/test/ver1/Results/1/**"/>
+    <exclude name="out/test/ver1/Results/2/**"/>
+    <exclude name="out/test/ver1/faceData/**"/>
+    <exclude name="out/test/ver1/faceData/1/**"/>
+    <exclude name="out/test/ver1/faceData/2/**"/>
+    <exclude name="out/test/ver1/faceData/3/**"/>
+    <exclude name="out/test/ver1/.metadata/**"/>
+    <exclude name="out/test/ver1/.metadata/.mylyn/**"/>
+    <exclude name="out/test/ver1/.metadata/.mylyn/.taskListIndex/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.jdt.ui/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.ui.ide/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.debug.ui/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.jdt.core/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.m2e.core/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.m2e.core/nexus/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.m2e.core/nexus/26522e0d83a422eed93329ece7565cfc/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.m2e.core/nexus/3f914517e7dfe062680f9e6a20319ae5/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.debug.core/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.debug.core/.launches/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.core.runtime/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.core.runtime/.settings/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.e4.workbench/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.ui.workbench/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.jdt.launching/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.core.resources/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.core.resources/.root/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.core.resources/.history/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.core.resources/.history/4/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.core.resources/.history/91/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.core.resources/.history/b6/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.core.resources/.history/b8/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.core.resources/.projects/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.core.resources/.projects/test/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.core.resources/.projects/test/org.eclipse.jdt.core/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.core.resources/.projects/Example1/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.core.resources/.projects/Example1/.indexes/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.core.resources/.projects/Example1/.indexes/af/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.core.resources/.projects/Example1/.indexes/e4/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.core.resources/.projects/Example1/org.eclipse.jdt.core/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.core.resources/.safetable/**"/>
+    <exclude name="out/test/ver1/.metadata/.plugins/org.eclipse.m2e.logback.configuration/**"/>
+    <exclude name="out/test/ver1/TrackerLib/**"/>
+    <exclude name="out/production/**"/>
+    <exclude name="out/production/ver1/**"/>
+    <exclude name="out/production/ver1/com/**"/>
+    <exclude name="out/production/ver1/com/intellij/**"/>
+    <exclude name="out/production/ver1/com/intellij/uiDesigner/**"/>
+    <exclude name="out/production/ver1/com/intellij/uiDesigner/core/**"/>
+    <exclude name="out/production/ver1/FCT/**"/>
+    <exclude name="out/production/ver1/test/**"/>
+    <exclude name="out/production/ver1/icons/**"/>
+    <exclude name="out/production/ver1/tests/**"/>
+    <exclude name="out/production/ver1/testerlib/**"/>
+    <exclude name="out/production/ver1/testerlib/for_testing/**"/>
+    <exclude name="out/production/ver1/testerlib/for_testing/testerlib/**"/>
+    <exclude name="out/production/ver1/TrackerLib/**"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.ver1">
+    <patternset refid="excluded.from.module.ver1"/>
+  </patternset>
+  
+  <path id="ver1.module.sourcepath">
+    <dirset dir="${module.ver1.basedir}/../../05_winter2016">
+      <include name="ver1.1/src"/>
+    </dirset>
+  </path>
+  
+  <path id="ver1.module.test.sourcepath">
+    <dirset dir="${module.ver1.basedir}/../../05_winter2016">
+      <include name="ver1.1"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.ver1" depends="compile.module.ver1.production,compile.module.ver1.tests" description="Compile module ver1"/>
+  
+  <target name="compile.module.ver1.production" depends="register.custom.compilers" description="Compile module ver1; production classes">
+    <mkdir dir="${ver1.output.dir}"/>
+    <javac2 destdir="${ver1.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.ver1}/javac">
+      <compilerarg line="${compiler.args.ver1}"/>
+      <bootclasspath refid="ver1.module.bootclasspath"/>
+      <classpath refid="ver1.module.production.classpath"/>
+      <src refid="ver1.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.ver1"/>
+    </javac2>
+    
+    <copy todir="${ver1.output.dir}">
+      <fileset dir="${module.ver1.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.ver1.tests" depends="register.custom.compilers,compile.module.ver1.production" description="compile module ver1; test classes" unless="skip.tests">
+    <mkdir dir="${ver1.testoutput.dir}"/>
+    <javac2 destdir="${ver1.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.ver1}/javac">
+      <compilerarg line="${compiler.args.ver1}"/>
+      <bootclasspath refid="ver1.module.bootclasspath"/>
+      <classpath refid="ver1.module.classpath"/>
+      <src refid="ver1.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.ver1"/>
+    </javac2>
+    
+    <copy todir="${ver1.testoutput.dir}">
+      <fileset dir="${module.ver1.basedir}">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.ver1" description="cleanup module">
+    <delete dir="${ver1.output.dir}"/>
+    <delete dir="${ver1.testoutput.dir}"/>
+  </target>
+</project>
